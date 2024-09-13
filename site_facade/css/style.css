@@ -18,14 +18,14 @@ h6 {
 }
 
 a {
-    color: #666666;
+    color: #ffffff;
     transition: .3s;
 }
 
 a:hover,
 a:active,
 a:focus {
-    color: #fdbe33;
+    color: grey;
     outline: none;
     text-decoration: none;
 }
@@ -37,7 +37,7 @@ a:focus {
 .wrapper {
     position: relative;
     width: 100%;
-    max-width: 1366px;
+   
     margin: 0 auto;
     background: #ffffff;
 }
@@ -78,7 +78,7 @@ a:focus {
 .top-bar {
     position: relative;
     height: 90px;
-    background: #fdbe33;
+    background: #D9D9D9;
 }
 
 .top-bar .logo {
@@ -155,7 +155,7 @@ a:focus {
 /**********************************/
 .nav-bar {
     position: relative;
-    background: #fdbe33;
+    background:  #030f27 !important;
     transition: .3s;
 }
 
@@ -167,7 +167,6 @@ a:focus {
     position: fixed;
     top: 0;
     width: 100%;
-    max-width: 1366px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
     z-index: 999;
 }
@@ -175,6 +174,8 @@ a:focus {
 .nav-bar .navbar {
     height: 100%;
     background: #030f27 !important;
+   
+
 }
 
 .navbar-dark .navbar-nav .nav-link,
@@ -187,7 +188,7 @@ a:focus {
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-    color: #fdbe33;
+    color: grey;
     transition: none;
 }
 
@@ -209,6 +210,16 @@ a:focus {
     background: #fdbe33;
     border-color: #fdbe33;
 }
+
+.navbar-nav.mr-auto {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-nav.mr-auto img {
+    margin-right: 1rem;
+  }
+  
 
 @media (min-width: 992px) {
     .nav-bar {
@@ -234,7 +245,7 @@ a:focus {
     }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 100%) {
     .nav-bar .navbar {
         padding: 15px;
     }
@@ -385,7 +396,7 @@ a:focus {
     margin-bottom: 45px;
     padding: 90px 0;
     text-align: center;
-    background: #fdbe33;
+    background: #D9D9D9;
 }
 
 .page-header h2 {
@@ -472,7 +483,7 @@ a:focus {
 }
 
 .section-header p {
-    color: #fdbe33;
+    color: black;
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 5px;
@@ -506,7 +517,7 @@ a:focus {
     
 .feature .col-md-12:nth-child(2n) {
     color: #030f27;
-    background: #fdbe33;
+    background:  #D9D9D9;
 }
 
 .feature .feature-item {
@@ -550,13 +561,13 @@ a:focus {
 }
 
 .feature .col-md-12:nth-child(2n) .feature-icon::after {
-    background: #fdbe33;
+    background: grey;
 }
 
 .feature .feature-icon [class^="flaticon-"]::before {
     position: relative;
     margin: 0;
-    color: #fdbe33;
+    color: grey;
     font-size: 60px;
     line-height: 60px;
     z-index: 3;
@@ -568,14 +579,14 @@ a:focus {
 
 .feature .feature-text h3 {
     margin: 0 0 10px 0;
-    color: #fdbe33;
+    color: white;
     font-size: 25px;
     font-weight: 600;
 }
 
 .feature .feature-text p {
     margin: 0;
-    color: #fdbe33;
+    color: #ffffff;
     font-size: 18px;
     font-weight: 400;
 }
@@ -585,7 +596,12 @@ a:focus {
 .feature .col-md-12:nth-child(2n) p {
     color: #030f27;
 }
-
+.navbar-nav img {
+    max-width: 75px; 
+    height: auto; 
+  
+  }
+  
 
 /*******************************/
 /********** About CSS **********/
@@ -622,14 +638,14 @@ a:focus {
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 1px;
-    color: #030f27;
+    color: white;
     border-radius: 0;
-    background: #fdbe33;
+    background: #030f27 !important;
     transition: .3s;
 }
 
 .about .about-text a.btn:hover {
-    color: #fdbe33;
+    color: grey;
     background: #030f27;
 }
 
@@ -668,7 +684,7 @@ a:focus {
     margin: 0;
     font-size: 60px;
     line-height: 60px;
-    background-image: linear-gradient(#ffffff, #fdbe33);
+    background-image: linear-gradient(#ffffff, grey);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -696,17 +712,17 @@ a:focus {
 }
 
 .fact .fact-left {
-    color: #fdbe33;
+    color: #ffffff;
     background: #030f27;
 }
 
 .fact .fact-right {
-    color: #030f27;
-    background: #fdbe33;
+    color: #ffffff;
+    background: grey;
 }
 
 .fact .fact-left h2 {
-    color: #fdbe33;
+    color: white;
 }
 
 
@@ -775,7 +791,7 @@ a:focus {
     width: calc(100% - 60px);
     font-size: 20px;
     font-weight: 700;
-    color: #fdbe33;
+    color: white;
     text-align: left;
     overflow: hidden;
     white-space: nowrap;
@@ -793,7 +809,7 @@ a:focus {
     line-height: 60px;
     font-weight: 100;
     color: #030f27;
-    background: #fdbe33;
+    background: grey;
     border-radius: 0;
     transition: .3s;
 }
@@ -881,14 +897,14 @@ a:focus {
 }
 
 .faqs .card-header [data-toggle="collapse"][aria-expanded="true"] {
-    background: #fdbe33;
+    background: white;
 }
 
 .faqs .card-header [data-toggle="collapse"]:after {
     font-family: 'font Awesome 5 Free';
     content: "\f067";
     float: right;
-    color: #fdbe33;
+    color: grey;
     font-size: 12px;
     font-weight: 900;
     transition: .5s;
@@ -1339,7 +1355,7 @@ a:focus {
 }
 
 .contact .col-md-6:last-child {
-    background: #fdbe33;
+    background: grey ;
 }
 
 .contact .contact-info {
@@ -1431,7 +1447,7 @@ a:focus {
     padding: 16px 30px;
     font-size: 16px;
     font-weight: 600;
-    color: #fdbe33;
+    color: white;
     background: #030f27;
     border: none;
     border-radius: 0;
