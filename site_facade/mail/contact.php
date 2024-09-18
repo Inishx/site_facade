@@ -51,29 +51,16 @@ try {
     // Contenu de l'e-mail
     $mail->isHTML(false);                               // Envoyer en texte brut
     $mail->Subject = "$m_subject:  $name";              // Objet de l'e-mail
-    $mail->Body    = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email\n\nSubject: $m_subject\n\nMessage: $message";
+    $mail->Body    = "Vous avez reçu un nouveau message via le formulaire de contact de votre site web.\n\n"."Voici les details:\n\nName: $name\n\nEmail: $email\n\nSubject: $m_subject\n\nMessage: $message";
 
     // Envoyer l'e-mail
     $mail->send();
-    echo 
-    "
-    <script>
-    alert('mail envoyé');
-    </script>
-    ";
+    echo "mail envoyé !";
 } catch (Exception $e) {
     // Gestion des erreurs
     echo "ERROR: " . $e ;
     //http_response_code(500);
-    echo
-    "    
-    Erreur lors de l'envoi de l'e-mail : {$mail->ErrorInfo}
-    
-    <script>
-    alert('erreur {$mail->ErrorInfo}');
-    </script>
-    ";
+    echo " Erreur lors de l'envoi de l'e-mail : {$mail->ErrorInfo} ";
 }
-
 
 ?>
