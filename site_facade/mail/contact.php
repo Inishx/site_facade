@@ -34,15 +34,6 @@ try {
     $mail->SMTPSecure = 'ssl';                          // Activer le chiffrement TLS
     $mail->Port = 465;                                  // Port SMTP pour TLS
     
-
-    // Paramètres du serveur mailHog
-    /*
-    $mail->isSMTP();                                    // Utiliser SMTP
-    $mail->Host = 'localhost';                          // Utiliser localhost pour MailHog
-    $mail->Port = 1025;                                 // Le port SMTP de MailHog
-    $mail->SMTPAuth = false;
-    */
-
     // Paramètres de l'e-mail
     $mail->setFrom($email, $name);                      // L'expéditeur du mail (l'adresse saisie dans le formulaire)
     $mail->addAddress($to);                             // Destinataire (votre adresse)
