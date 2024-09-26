@@ -34,6 +34,12 @@ try {
     $mail->SMTPSecure = 'ssl';                          // Activer le chiffrement TLS
     $mail->Port = 465;                                  // Port SMTP pour TLS
     
+
+    //DEBUG
+    $mail->SMTPDebug = 2;  // Affiche les messages de débogage
+    $mail->Debugoutput = 'html';  // Afficher le débogage en format HTML
+
+
     // Paramètres de l'e-mail
     $mail->setFrom($email, $name);                      // L'expéditeur du mail (l'adresse saisie dans le formulaire)
     $mail->addAddress($to);                             // Destinataire (votre adresse)
